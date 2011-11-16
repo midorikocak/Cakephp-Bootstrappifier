@@ -3,7 +3,7 @@ Bootstrappifier for CakePHP is a Javascript library to use Twitter Bootstrap lib
 
 For download:
 
-https://github.com/mtkocak
+https://github.com/mtkocak/Cakephp-Bootstrappifier
 
 For install:
 
