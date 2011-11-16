@@ -7,14 +7,17 @@ https://github.com/mtkocak/Cakephp-Bootstrappifier
 
 For install:
 
+0. You have to have Jquery Library
+
 1. You have to have Twitter Bootstrap configured. (cake.generic.css removed from default.ctp, files downloaded and included to you webroot/css and web root/js folders )
 
-2. Copy cakebootstrap.js in your webroot/js folder 
+2. Copy cakebootstrap.js in your webroot/js folder
 
 3. Your View/Layouts/default.ctp file must include this in head tag:
 
 echo $this->Html->css('bootstrap.min'); //You don't need to add again if you have this
-echo $this->Html->script('libs/jquery-1.6.2.min.js');
+echo $this->Html->script('libs/jquery-1.6.2.min.js');// You don't need this if you have Jquery
 
+echo $this->Html->script('cakebootstrap.js');
 
 - For any question mtkocak@gmail.com
