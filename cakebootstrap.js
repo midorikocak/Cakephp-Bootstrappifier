@@ -32,7 +32,11 @@ $('div.clearfix > label ~ select').wrap('<div class="input added" />');
 //Default CakePHP Error inputs are converted to twitter bootstrap style
 function errorstrap()
 {
+	$('.message').addClass('alert-message error');
+	$('.flash_success').addClass('alert-message success');
+	$('.flash_warning').addClass('alert-message warning');
 	$('.error-message').addClass('help-inline');
+	//$('div.error-message').append($('div.error-message').replaceWith('<span class="help-inline">'+$('div.error-message').text()+'</span'));
 	$('.form-error').addClass('error');
 	$('.form-error').closest('.clearfix').addClass('error');
 }
