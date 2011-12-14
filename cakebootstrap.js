@@ -25,7 +25,7 @@ $('td][class="actions"] > a[class!="btn"]').addClass('btn');
 $('div[class!="input added"].input').removeClass().addClass('clearfix');
 $('div.clearfix > label ~ input').wrap('<div class="input added" />');
 $('div.clearfix > label ~ select').wrap('<div class="input added" />');
-
+$('div.clearfix > label ~ textarea').wrap('<div class="input added" />');
 
 }
 
