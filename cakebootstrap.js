@@ -13,9 +13,9 @@
 function cakebootstrap()
 {
 //All submit forms wrapped to div.action
-$('input][type="submit"][class!="btn primary"]').wrap('<div class="actions" />');
+$('input][type="submit"][class!="btn btn-primary"]').wrap('<div class="actions" />');
 //All submit forms converted to primary button
-$('input[type="submit"]').addClass('btn primary');
+$('input[type="submit"]').addClass('btn btn-primary');
 //All index actions converted into pretty buttons
 $('td][class="actions"] > a[class!="btn"]').addClass('btn');
 
@@ -32,10 +32,10 @@ $('div.clearfix > label ~ textarea').wrap('<div class="input added" />');
 //Default CakePHP Error inputs are converted to twitter bootstrap style
 function errorstrap()
 {
-	$('.message').addClass('alert-message error');
-	$('.flash_success').addClass('alert-message success');
-	$('.flash_warning').addClass('alert-message warning');
-	$('.error-message').addClass('help-inline');
+	$('.message').addClass('alert alert-info');
+	$('.flash_success').addClass('alert alert-success');
+	$('.flash_warning').addClass('alert');
+	$('.error-message').addClass('alert alert-error');
 	//$('div.error-message').append($('div.error-message').replaceWith('<span class="help-inline">'+$('div.error-message').text()+'</span'));
 	$('.form-error').addClass('error');
 	$('.form-error').closest('.clearfix').addClass('error');
